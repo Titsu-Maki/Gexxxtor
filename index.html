@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+        <link rel="stylesheet" href="font-awesome.css">
+        <script src="https://kit.fontawesome.com/0380157101.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/cambiarPestanna.js"></script>
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <title>GESTOR DE SOLICITUDES</title>
+    </head>
+    <body>
+
+        <div class="header" id="myHeader">        
+            <h1><img src="img/descarga.png" width="40" height="40" /> GRUPO 5
+            </h1>
+           
+         </div>
+
+        <div class="contenedor">
+            <center><div class="titulo">Gestor de Solicitudes</div></center>
+            <div id="pestanas">
+                <ul id=lista>
+
+                    <li id="pestana1"><a href='javascript:cambiarPestanna(pestanas,pestana1);'>
+                        Centro de Atencion
+                    </a></li>
+
+                    <li id="pestana2"><a href='javascript:cambiarPestanna(pestanas,pestana2);'>
+                        Nueva Solicitud</i>       
+                    </a></li>
+
+                    <li id="pestana3"><a href='javascript:cambiarPestanna(pestanas,pestana3);'>
+                        Estado de la Solicitud</i> 
+                    </a></li>
+                    
+                </ul>
+            </div>
+            
+            <body onload="javascript:cambiarPestanna(pestanas,pestana1);">
+    
+            <div id="contenidopestanas">
+                <div id="cpestana1">
+                   <center><h1>Bienvenido a nuestro Gestor de Solicitudes</h1></center>
+                   <p align="center">
+                    <pre>
+                    Para agilizar las solicitudes y brindarle un mejor servicio, utilizamos un sistema de solicitudes
+                    de soporte. A cada solicitud de asistencia se le asigna un número único que puede usar para 
+                    rastrear el progreso y las respuestas en linea. Para su referencia proporcionamos archivos
+                    completos e historial de todas sus solicitudes de soporte. Se requiere una direccion de correo 
+                    electrónico valida para enviar la solicitud.
+                
+                </pre>
+                
+                    
+                
+                </p>
+                    <center><button name="button">Nueva Solicitud</button> 
+                                    
+                    <button name="button">Ver Estado de Solicitud</button></center>
+                </div>
+                <div id="cpestana2">
+                                  
+                    <p>Soy:</p>
+                     <form action="/action_page.php">
+                     <input type="radio" id="html" name="fav_language" value="HTML">
+                     <label for="html">Cliente</label><br>
+                     <input type="radio" id="css" name="fav_language" value="CSS">
+                     <label for="css">Proveedor</label><br>
+                     <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                     <label for="javascript">Empleado</label><br><br>
+                   
+                     <p>Seleccione el tema de ayuda:</p>
+
+                     <form action="/action_page.php">
+                     <label for="ayuda"></label>
+                     <select id="ayuda" name="ayuda">
+                     <option value="volvo">---</option>
+
+                     </select>
+                     </form>
+
+                    </select>
+                    
+                    <form action="/action_page.php">
+                        <label for="ename">Nombre de la Empresa:</label><br>
+                        <input type="text" id="ename" name="ename" value=""><br>
+                        <label for="pname">Nombres y Apellidos de la Persona:</label><br>
+                        <input type="text" id="pname" name="pname" value=""><br><br>
+                        <label for="cname">Correo Electronico Principal:</label><br>
+                        <input type="text" id="cname" name="cname" value=""><br><br>
+                        <label for="tname">Telefono Movil:</label><br>
+                        <input type="text" id="tname" name="tname" value=""><br><br>
+                        <input type="submit" value="Submit">
+                        <input type="reset">
+                        <form action="/action_page.php" autocomplete="on"></form>
+                      </form>
+                    </form> 
+                 
+                </div>
+                <div id="cpestana3">
+                    
+               
+            </div>
+        </div>
+        <footer>
+            <p>Author: Grupo 5</p>
+            <p><a href="https://ww2.ufps.edu.co/">Universidad Francisco de Paula Santander</a></p>
+          </footer>
+    </body>
+</html>
